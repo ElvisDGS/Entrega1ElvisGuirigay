@@ -1,0 +1,21 @@
+{% extends "AppFinal/inicio.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+      
+    <br>
+    <div class="container">
+        <h2 class="request_text" >CONTACTANOS AQUI</h2>
+    </div>
+    
+    <form action="" method="post">{% csrf_token %}
+        <table>
+            {{miFormulario2.as_table}}
+        </table>
+        <input type="submit",value="Enviar">
+    </form>
+
+    
+{% endblock %}
